@@ -1,0 +1,11 @@
+Script started on 2024-03-23 04:47:03+00:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="192" LINES="48"]
+]0;dom@archlinux:~/documents/projects/containers-applications/script-answers[?2004h[dom@archlinux script-answers]$ sudo docker container run -it ubuntu bash
+[?2004l[sudo] password for dom: 
+[?2004h]0;root@dc0fc5e86a59: /root@dc0fc5e86a59:/# mkdir usr/src/app
+[?2004l[?2004h]0;root@dc0fc5e86a59: /root@dc0fc5e86a59:/# touchmkdir usr/src/app[1P[1P[1P[1P[1P[1P[1@t[1@ou[1@u[1@c[1@h[1@ usr/src/app/index.js
+[?2004l[?2004h]0;root@dc0fc5e86a59: /root@dc0fc5e86a59:/# [Kexit
+[?2004lexit
+]0;dom@archlinux:~/documents/projects/containers-applications/script-answers[?2004h[dom@archlinux script-answers]$ [?2004l
+exit
+
+Script done on 2024-03-23 04:47:38+00:00 [COMMAND_EXIT_CODE="0"]
