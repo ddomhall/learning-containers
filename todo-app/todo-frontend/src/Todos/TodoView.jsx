@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from '../util/apiClient'
 
-import List from './List'
+import Todo from './Todo'
 import Form from './Form'
 
 const TodoView = () => {
@@ -38,7 +38,7 @@ const TodoView = () => {
     <>
       <h1>Todos</h1>
       <Form createTodo={createTodo} />
-      <List todos={todos} deleteTodo={deleteTodo} completeTodo={completeTodo} />
+      {todos.map(todo => <Todo todo={todo} deleteTodo={deleteTodo} completeTodo={completeTodo} />).reduce((acc, cur) => [...acc, <hr />, cur], [])}
     </>
   )
 }
