@@ -38,7 +38,7 @@ const TodoView = () => {
     <>
       <h1>Todos</h1>
       <Form createTodo={createTodo} />
-      {todos.map(todo => <Todo todo={todo} deleteTodo={deleteTodo} completeTodo={completeTodo} />).reduce((acc, cur) => [...acc, <hr />, cur], [])}
+      {todos.map(todo => <Todo key={todo._id} todo={todo} deleteTodo={deleteTodo} completeTodo={completeTodo} />)}
     </>
   )
 }

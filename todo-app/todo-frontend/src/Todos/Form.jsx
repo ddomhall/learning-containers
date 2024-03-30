@@ -10,11 +10,11 @@ const TodoForm = ({ createTodo }) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     createTodo({ text })
-    setText()
+    setText('')
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{paddingBottom: '10px' }}>
       <input type="text" name="text" value={text} onChange={onChange} />
       <button type="submit"> Submit </button>
     </form>

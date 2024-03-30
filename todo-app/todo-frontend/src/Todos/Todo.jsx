@@ -10,17 +10,15 @@ const Todo = ({ todo, deleteTodo, completeTodo }) => {
   }
 
   return (
-    <>
-      <div style={{ display: 'flex', justifyContent: 'space-between', maxWidth: '70%', margin: 'auto' }}>
-        <div>
-          {todo.text} 
-        </div>
-        <div style={{ display: 'flex'}}>
+    <div style={{ display: 'flex', justifyContent: 'space-between', maxWidth: '70%', margin: 'auto', padding: '10px', borderTop: '1px solid black' }}>
+      <div>
+        {todo.text} 
+      </div>
+      <div style={{ display: 'flex'}}>
         {todo.done ? <p style={{width: '85.53px', margin: '0'}}>done</p> : <button onClick={onClickComplete(todo)}> Set as done </button>}
         <button onClick={onClickDelete(todo)}> Delete </button>
-        </div>
       </div>
-    </>
+    </div>
   )
 }
 
